@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>個人網站</title>
+    <style>
+        @import url(bootstrap-4.5.3/css/bootstrap.min.css);
+        @import url(main.css);
+    </style>
+    <script src="bootstrap-4.5.3/jquery/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-4.5.3/js/bootstrap.bundle.min.js"></script>
+</head>
+    
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" id=navbartop>
+    <a class="navbar-brand" href="Home.html">
+        <img src="img/brand/brand.png" width="30" height="30" alt="logo">
+        <span class="navbar-text">首頁</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="Home.html"><img src="img/icon/icon-user.png" width="25" height="25">簡歷</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="autobiography.html"><img src="img/icon/icons-autobiography.png" width="25" height="25">自傳</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="project.html"><img src="img/icon/icons-project.png" width="25" height="25">作品</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="project">
+        <div class="row clearfix" style="text-align: center;">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <img src="img/project/monopoly.png" width="90%" height="90%">
+                <div class="project-title"><img src="img/icon/icons-img.png" width="25px">大富翁遊戲</div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <img src="img/project/monopolyWeb.png" width="100%" height="100%">
+                <div class="project-title"><img src="img/icon/icons-img.png" width="30px">大富翁網頁題庫</div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <video controls width="90%" height="auto">
+                    <source src="./img/project/room.mp4" type="video/mp4">
+                </video>
+                <div class="project-title"><img src="img/icon/icons-video.png" width="30px">VR密室逃脫</div>
+            </div> 
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <img src="img/project/pingtung1.png" width="100%" height="100%">
+                <div class="project-title"><img src="img/icon/icons-video.png" width="30px">殯葬App</div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

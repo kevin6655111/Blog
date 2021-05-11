@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>個人網站</title>
+    <style>
+        @import url(bootstrap-4.5.3/css/bootstrap.min.css);
+        @import url(main.css);
+    </style>
+    <script src="bootstrap-4.5.3/jquery/jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-4.5.3/js/bootstrap.bundle.min.js"></script>
+</head>
+    
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" id=navbartop>
+    <a class="navbar-brand" href="Home.html">
+        <img src="img/brand/brand.png" width="30" height="30" alt="logo">
+        <span class="navbar-text">首頁</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="Home.html"><img src="img/icon/icon-user.png" width="25" height="25">簡歷</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="autobiography.html"><img src="img/icon/icons-autobiography.png" width="25" height="25">自傳</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="project.html"><img src="img/icon/icons-project.png" width="25" height="25">作品</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+
+  <div id="banner" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <ol class="carousel-indicators">
+        <li data-target="#banner" data-slide-to="0" class="active"></li>
+        <li data-target="#banner" data-slide-to="1"></li>
+        <li data-target="#banner" data-slide-to="2"></li>
+    </ol>     
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/banner/banner.jpg" width="100%" height="100%" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img src="img/banner/banner2.jpg" width="100%" height="100%" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img src="img/banner/banner3.jpg" width="100%" height="100%" alt="Third slide">
+        </div>
+    </div>
+    <a href="#banner" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a href="#banner" class="carousel-control-next" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="container">
+    <div class="header">
+        <div class="row clearfix">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4" style="margin-top: auto; margin-bottom: auto;">
+                <div class="photoframe">
+                    <img src="img/person/coverphoto.png"  class="img-thumbnail" alt="coverphoto">
+                </div>
+            </div>
+            <div class="col-8 col-sm-8 col-md-8 col-lg-8" style="margin-top: auto; margin-bottom: auto;">
+                <div class="personalinformation">
+                    <dl>
+                        <li><a>姓名: 鄧建宸</a><br></li>
+                        <li><a>學校: 國立屏東大學</a><br></li>
+                        <li><a>系所: 資訊工程學系</a><br></li>
+                        <li><a>學歷: 碩士</a></li>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="projectExperience">
+        <div class="row clearfix">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>專案經歷</h1>
+                <ul>
+                    <li><a>屏東市殯葬設施網站維護與App設計(108/5~109/4)</a></li>
+                    <li><a>109年高等教育深耕計畫-USR大學社會責任實踐計畫-大富翁遊戲(109/7~110/)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="programmingSkill">
+        <div class="row clearfix">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>程式技能</h1>
+                <div class="accordion" id="accordionSkill">
+                    <div class="card">
+                        <div id="skillOne">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseA" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>C#</h4>
+                            </button>
+                        </div>
+                        <div id="collapseA" class="collapse" aria-labelledby="skillOne" data-parent="#accordionSkill">
+                            <div class="card-body">
+                                <li><a>教育部計畫中運用Unity3D開發教育性大富翁遊戲。</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="skillTwo">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseB" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>HTML/CSS/Javascript/JQuery/bootstrap</h4>
+                            </button>
+                        </div>
+                        <div id="collapseB" class="collapse" aria-labelledby="skillTwo" data-parent="#accordionSkill">
+                            <div class="card-body">
+                                <li><a>大富翁網頁題庫(依課程需求更換遊戲題目)</a></li>
+                                <li><a>個人網站製作</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="skillThree">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseC" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>PHP/MYSQL</h4>
+                            </button>
+                        </div>
+                        <div id="collapseC" class="collapse" aria-labelledby="skillThree" data-parent="#accordionSkill">
+                            <div class="card-body">
+                                <li><a>回應來自前端或Unity的請求</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="skillFour">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseD" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>Python</h4>
+                            </button>
+                        </div>
+                        <div id="collapseD" class="collapse" aria-labelledby="skillFour" data-parent="#accordionSkill">
+                            <div class="card-body">
+                                <li><a>碩士論文「基於深度學習與目標辨識技術應用於釋迦的病蟲害」</a></li>
+                                <li><a>使用PyCharm和tensorflow框架做深度學習訓練</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="skillFive">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseE" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>IOS Swift</h4>
+                            </button>
+                        </div>
+                        <div id="collapseE" class="collapse" aria-labelledby="skillFive" data-parent="#accordionSkill">
+                            <div class="card-body">
+                                <li><a>開發屏東市公所殯葬App</a></li>
+                                <li><a>用Xcode開發App的部分功能(最新消息、公告欄)</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="skillSix">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseF" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>C語言</h4>
+                            </button>
+                        </div>
+                        <div id="collapseF" class="collapse" aria-labelledby="skillSix" data-parent="#accordionSkill">
+                            <div class="card-body">
+                                <li><a>曾參加系上舉辦的五子棋競賽</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contests">
+        <div class="row clearfix"> 
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <br><h1>獲獎榮譽</h1>
+                <div class="accordion" id="accordionContests">
+                    <div class="card">
+                        <div id="headingOne">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>跨領域人工智慧創新應用競賽 | 冠軍</h4>
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionContests">
+                            <div class="card-body">
+                                <img src="img/contests/跨領域人工智慧競賽.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="headingTwo">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>2019 第十九屆數位生活科技研討會 | 最佳論文</h4>
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionContests">
+                            <div class="card-body">
+                                <img src="img/contests/DLT.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="headingThree">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>2019 第六屆南區大專資訊專題競賽 | 第三名</h4>
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionContests">
+                            <div class="card-body">
+                                <img src="img/contests/南區專題競賽.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="headingFour">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>國立屏東大學107學年度資訊學院實務專題成果競賽 | 優勝</h4>
+                            </button>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionContests">
+                            <div class="card-body">
+                                <img src="img/contests/107專題競賽.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="headingFive">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>受邀參加2019放視大賞 | VR作品展覽</h4>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="headingSix">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>受邀參加KOSMOS FESTIVAL體感重裝部隊 | 產學合作成果展</h4>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="license">
+        <div class="row clearfix">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <br><h1>證照</h1>
+                <div class="accordion" id="accordionLicense">
+                    <div class="card">
+                        <div id="headingSeven">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>TQC+ 程式語言</h4>
+                            </button>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionContests">
+                            <div class="card-body">
+                                <img src="img/contests/TQC+ C語言.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="headingEight">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>TQC+ Python3</h4>
+                            </button>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionContests">
+                            <div class="card-body">
+                                <img src="img/contests/TQC+ python3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="headingNine">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>數位電子乙級</h4>
+                            </button>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionContests">
+                            <div class="card-body">
+                                <img src="img/contests/數位電子.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
